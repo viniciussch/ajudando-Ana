@@ -1,0 +1,13 @@
+salario = float(input("Qual o seu salário?"))
+conta1 = float(input("Qual o valor da sua primeira conta?"))
+conta2 = float(input("E qual o valor da sua segunda conta?"))
+juros01 = conta1 * 0.03
+juros02 = conta2 * 0.03
+totaldejuros = juros01 + juros02
+totalconta = conta1 + conta2
+totalgeral = totalconta + totaldejuros
+sobra = totalgeral - salario
+if totalgeral > salario:
+    print("Você esta com uma divida de {} reais". format(sobra))
+else :
+    print("Você tem um total de {} reais para pagar, com seu salário de {} será o suficiente para pagar as contas atrasadas".format(totalgeral, salario))
